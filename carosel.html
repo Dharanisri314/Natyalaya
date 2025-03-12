@@ -1,0 +1,313 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dance Website - Smooth Image Scroll</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .carousel-container {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item-custom {
+      flex: 0 0 25%;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      background-color: rgba(0, 0, 0, 0.1);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media (max-width: 768px) {
+      .carousel-item-custom {
+        flex: 0 0 50%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .carousel-item-custom {
+        flex: 0 0 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2 class="text-center">Gurus</h2>
+    <p class="text-center">These are brief profiles of the Gurus who form the bedrock of NatyaSutraOnline. Their journeys and passion are a lighthouse, eternally illuminating a path towards the revival of Indian art forms.</p>
+
+    <div class="carousel-container position-relative">
+      <div class="carousel-track">
+        <div class="carousel-item-custom">
+          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/pali-chandraguru-pali-chandra-indian-kathak-dancer-choreographer-and-teacher.webp" class="profile-img" alt="Guru Dr Pali Chandra">
+          <h5>Guru Dr Pali Chandra</h5>
+          <p>Kathak</p>
+        </div>
+        <div class="carousel-item-custom">
+          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/sujata-mohapatrasujata-mohapatra-disciple-of-guru-kelucharan-mohapatraan-odissi-dancer-and-teacher.webp" class="profile-img" alt="Vidushi Sujata Mohapatra">
+          <h5>Vidushi Sujata Mohapatra</h5>
+          <p>Odissi</p>
+        </div>
+        <div class="carousel-item-custom">
+          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/kalamandalam-gopipadma-shree-kalamandalam-gopi-great-kathakali-artist.webp" class="profile-img" alt="Kalamandalam Gopi">
+          <h5>Kalamandalam Gopi</h5>
+          <p>Kathakali</p>
+        </div>
+        <div class="carousel-item-custom">
+          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/smitha-rajansmitha-rajan-mohiniyattam-performer-and-choreographer.webp" class="profile-img" alt="Smitha Rajan">
+          <h5>Smitha Rajan</h5>
+          <p>Mohiniyattam</p>
+        </div>
+        <div class="carousel-item-custom">
+          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/sreelakshmy-govardhanansreelakshmy-govardhanan-kuchipudi-dancer-choreographer-and-teacher.webp" class="profile-img" alt="Sreelakshmy Govardhanan">
+          <h5>Sreelakshmy Govardhanan</h5>
+          <p>Kuchipudi</p>
+        </div>
+        <div class="carousel-item-custom">
+          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/rajashree-warrierrajashree-warrier-bharatanatyam-dancer-classical-musician-and-a-media-person.webp" class="profile-img" alt="Dr Rajashree Warrier">
+          <h5>Dr Rajashree Warrier</h5>
+          <p>Bharatanatyam</p>
+        </div>
+        <div class="carousel-item-custom">
+          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/neena-prasadneena-prasad-mohiniyattam-dancer.webp" class="profile-img" alt="Dr Neena Prasad">
+          <h5>Dr Neena Prasad</h5>
+          <p>Mohiniyattam</p>
+        </div>
+        <div class="carousel-item-custom">
+          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/rama-vaidyanathanrama-vaidyanathan-is-a-bharatanatyam-dancer-and-teacher1.webp" class="profile-img" alt="Rama Vaidyanathan">
+          <h5>Rama Vaidyanathan</h5>
+          <p>Bharatanatyam</p>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <!-- <button class="carousel-control-prev position-absolute start-0" id="prevBtn">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next position-absolute end-0" id="nextBtn">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const track = document.querySelector(".carousel-track");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const items = document.querySelectorAll(".carousel-item-custom");
+      let index = 0;
+      const itemWidth = items[0].offsetWidth + 20; // Image width + padding
+      const totalItems = items.length;
+      const visibleItems = 4; // Number of items visible at a time
+  
+      function moveCarousel() {
+        track.style.transition = "transform 0.5s ease-in-out";
+        track.style.transform = `translateX(-${index * itemWidth}px)`;
+      }
+  
+      nextBtn.addEventListener("click", function () {
+        if (index >= totalItems - visibleItems) {
+          // If at the end, reset to start
+          index = 0;
+          track.style.transition = "none"; // Remove transition for instant jump
+          track.style.transform = `translateX(0)`;
+          setTimeout(() => {
+            track.style.transition = "transform 0.5s ease-in-out";
+          }, 50);
+        } else {
+          index++;
+          moveCarousel();
+        }
+      });
+  
+      prevBtn.addEventListener("click", function () {
+        if (index <= 0) {
+          // If at the start, jump to the last set
+          index = totalItems - visibleItems;
+          track.style.transition = "none"; // Remove transition for instant jump
+          track.style.transform = `translateX(-${index * itemWidth}px)`;
+          setTimeout(() => {
+            track.style.transition = "transform 0.5s ease-in-out";
+          }, 50);
+        } else {
+          index--;
+          moveCarousel();
+        }
+      });
+    });
+  </script>
+  
+
+</body>
+
+</html> --> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Classes Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 10px;
+            scrollbar-width: none; /* Hide scrollbar */
+        }
+
+        .carousel-track::-webkit-scrollbar {
+            display: none;
+        }
+
+        .carousel-item-custom {
+            flex: 0 0 auto;
+            width: 300px;
+            text-align: center;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding-bottom: 15px;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: white;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .carousel-control-prev { left: -10px; }
+        .carousel-control-next { right: -10px; }
+
+        .carousel-control:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .btn-custom {
+            color: #d63384;
+            border: 1px solid #d63384;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn-custom:hover {
+            background: #d63384;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Dance Classes</h2>
+        <p class="text-center">
+            Explore our dance classes to learn traditional and classical Indian art forms rooted in culture. Join now for an unforgettable experience!
+        </p>
+
+        <div class="carousel-container">
+            <button class="carousel-control carousel-control-prev" id="prevBtn">&#10094;</button>
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-item-custom">
+                    <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/smitha-rajansmitha-rajan-mohiniyattam-performer-and-choreographer.webp" class="profile-img" alt="Smitha Rajan">
+                    <h5>Padam Kanden...</h5>
+                    <p>Smitha Rajan</p>
+                    <p>Smitha Rajan takes us on a mystical journey in this Mohiniyattam...</p>
+                    <button class="btn btn-custom">View Details</button>
+                </div>
+                <div class="carousel-item-custom">
+                    <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/neena-prasadneena-prasad-mohiniyattam-dancer.webp" class="profile-img" alt="Dr Neena Prasad">
+                    <h5>Ananda Bhairavi...</h5>
+                    <p>Dr Neena Prasad</p>
+                    <p>Dr. Neena Prasad's teachings commence with an overview of the Swarajathi...</p>
+                    <button class="btn btn-custom">View Details</button>
+                </div>
+                <div class="carousel-item-custom">
+                    <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/pali-chandraguru-pali-chandra-indian-kathak-dancer-choreographer-and-teacher.webp" class="profile-img" alt="Guru Dr Pali Chandra">
+                    <h5>Lalitha Lavanga</h5>
+                    <p>Guru Dr Pali Chandra</p>
+                    <p>The effect of the spring season on humans, Nature and divine beings were...</p>
+                    <button class="btn btn-custom">View Details</button>
+                </div>
+            </div>
+            <button class="carousel-control carousel-control-next" id="nextBtn">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        const carouselTrack = document.getElementById("carouselTrack");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        const scrollAmount = 320;
+
+        nextBtn.addEventListener("click", () => {
+            carouselTrack.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+
+        prevBtn.addEventListener("click", () => {
+            carouselTrack.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        });
+    </script>
+
+</body>
+</html>
