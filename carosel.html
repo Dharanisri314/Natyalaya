@@ -173,6 +173,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -185,19 +195,21 @@
             position: relative;
             overflow: hidden;
             padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .carousel-track-wrapper {
+            overflow: hidden;
+            width: 80%;
         }
 
         .carousel-track {
             display: flex;
             gap: 20px;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-            padding-bottom: 10px;
-            scrollbar-width: none; /* Hide scrollbar */
-        }
-
-        .carousel-track::-webkit-scrollbar {
-            display: none;
+            transition: transform 0.5s ease;
         }
 
         .carousel-item-custom {
@@ -209,6 +221,7 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding-bottom: 15px;
+            height: 450px;
         }
 
         .profile-img {
@@ -232,20 +245,20 @@
             color: white;
             border-radius: 50%;
             z-index: 2;
+            opacity: 0.8;
         }
 
-        .carousel-control-prev { left: -10px; }
-        .carousel-control-next { right: -10px; }
+        .carousel-control-prev { left: 5px; }
+        .carousel-control-next { right: 5px; }
 
         .carousel-control:hover {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
         }
 
         .btn-custom {
             color: #d63384;
             border: 1px solid #d63384;
             padding: 5px 15px;
-            border-radius: 20px;
             font-size: 14px;
             transition: 0.3s;
         }
@@ -258,35 +271,84 @@
 </head>
 <body>
 
-    <div class="container mt-5">
-        <h2 class="text-center">Dance Classes</h2>
-        <p class="text-center">
-            Explore our dance classes to learn traditional and classical Indian art forms rooted in culture. Join now for an unforgettable experience!
-        </p>
+    <div class="container mt-5 text-center">
+        <h2>Dance Classes</h2>
+        <p>Explore our dance classes to learn traditional and classical Indian art forms rooted in culture. Join now for an unforgettable experience!</p>
 
         <div class="carousel-container">
-            <button class="carousel-control carousel-control-prev" id="prevBtn">&#10094;</button>
-            <div class="carousel-track" id="carouselTrack">
-                <div class="carousel-item-custom">
-                    <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/smitha-rajansmitha-rajan-mohiniyattam-performer-and-choreographer.webp" class="profile-img" alt="Smitha Rajan">
-                    <h5>Padam Kanden...</h5>
-                    <p>Smitha Rajan</p>
-                    <p>Smitha Rajan takes us on a mystical journey in this Mohiniyattam...</p>
+            <button class="carousel-control carousel-control-prev" id="prevBtn" disabled>&#10094;</button>
+            <div class="carousel-track-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-item-custom">
+                        <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/smitha-rajansmitha-rajan-mohiniyattam-performer-and-choreographer.webp" class="profile-img" alt="Smitha Rajan">
+                        <h5>Padam Kanden...</h5>
+                        <p>Smitha Rajan</p>
+                        <p>Smitha Rajan takes us on a mystical journey in this Mohiniyattam...</p>
+                        <button class="btn btn-custom">View Details</button>
+                    </div>
+                    <div class="carousel-item-custom">
+                        <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/neena-prasadneena-prasad-mohiniyattam-dancer.webp" class="profile-img" alt="Dr Neena Prasad">
+                        <h5>Ananda Bhairavi...</h5>
+                        <p>Dr Neena Prasad</p>
+                        <p>Dr. Neena Prasad's teachings commence with an overview of the Swarajathi...</p>
+                        <button class="btn btn-custom">View Details</button>
+                    </div>
+                    <div class="carousel-item-custom">
+                        <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/pali-chandraguru-pali-chandra-indian-kathak-dancer-choreographer-and-teacher.webp" class="profile-img" alt="Guru Dr Pali Chandra">
+                        <h5>Lalitha Lavanga</h5>
+                        <p>Guru Dr Pali Chandra</p>
+                        <p>The effect of the spring season on humans, Nature and divine beings were...</p>
+                        <button class="btn btn-custom">View Details</button>
+                    </div>
+                    <div class="carousel-item-custom">
+                      <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/sundara-syama.webp" class="profile-img" alt="Guru Dr Pali Chandra">
+                      <h5>Sundara Syama</h5>
+                      <p>Geeta Chandran</p>
+                      <p>Sundara Shyama Sundara Bala Leela, a Surdas Padh choreographed...</p>
+                      <button class="btn btn-custom">View Details</button>
+                  </div>
+                  <div class="carousel-item-custom">
+                    <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/ardhanareeswara-ashtakam1.webp" class="profile-img" alt="Guru Dr Pali Chandra">
+                    <h5>Ardhanareeswara Ashtakam</h5>
+                    <p>Rama Vaidyanathan</p>
+                    <p>Rama Vaidyanathan explores the duality of Lord Shive and Goddess Parvati, with a Bharatanatyam composition on Their...</p>
                     <button class="btn btn-custom">View Details</button>
                 </div>
                 <div class="carousel-item-custom">
-                    <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/neena-prasadneena-prasad-mohiniyattam-dancer.webp" class="profile-img" alt="Dr Neena Prasad">
-                    <h5>Ananda Bhairavi...</h5>
-                    <p>Dr Neena Prasad</p>
-                    <p>Dr. Neena Prasad's teachings commence with an overview of the Swarajathi...</p>
-                    <button class="btn btn-custom">View Details</button>
-                </div>
-                <div class="carousel-item-custom">
-                    <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/pali-chandraguru-pali-chandra-indian-kathak-dancer-choreographer-and-teacher.webp" class="profile-img" alt="Guru Dr Pali Chandra">
-                    <h5>Lalitha Lavanga</h5>
-                    <p>Guru Dr Pali Chandra</p>
-                    <p>The effect of the spring season on humans, Nature and divine beings were...</p>
-                    <button class="btn btn-custom">View Details</button>
+                  <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/beginners-lessons10.webp" class="profile-img" alt="Guru Dr Pali Chandra">
+                  <h5>Beginners Lessons</h5>
+                  <p>Guru Dr Pali Chandra</p>
+                  <p>These classes are for absolute beginners to Kathak. Guru Pali Chandra aims at establishing the foundation among her...</p>
+                  <button class="btn btn-custom">View Details</button>
+              </div>
+              <div class="carousel-item-custom">
+                <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/bhogeendra-sayinam1.webp" class="profile-img" alt="Guru Dr Pali Chandra">
+                <h5>Bhogeendra Sayinam</h5>
+                <p>Dr Rajashree Warrier</p>
+                <p>Learn Bharatanatyam composition Bhogeendra Sayinam, a tribute to vishnu , seated atop the serpent Anantha or Adi...</p>
+                <button class="btn btn-custom">View Details</button>
+            </div>
+            <div class="carousel-item-custom">
+              <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/lalitha-lavanga4.webp" class="profile-img" alt="Guru Dr Pali Chandra">
+              <h5>Lalitha Lavanga</h5>
+              <p>Gura Dr pali Chandra</p>
+              <p>The effect of the spring season on humans, Nature and divine beings were described in the Lalitha Lavanga...</p>
+              <button class="btn btn-custom">View Details</button>
+          </div>
+          <div class="carousel-item-custom">
+            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/angika-bharatanatyam-methods-and-beyond2.webp" class="profile-img" alt="Guru Dr Pali Chandra">
+            <h5>ANGIKA:Bharatanatyam Methods and...</h5>
+            <p>Dr Rajashree Warrier</p>
+            <p>Dr. Rajashree Warrier focuses on how a student must pali-chandraguru-pali-chandra-indian-kathak-dancer-choreographer-and-teacher and elaborate the teachings of Abhinaya Darpana . The studen...</p>
+            <button class="btn btn-custom">View Details</button>
+        </div>
+        <div class="carousel-item-custom">
+          <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/sri-chakra-raja2.webp" class="profile-img" alt="Guru Dr Pali Chandra">
+          <h5>Sri Chakra Raja...</h5>
+          <p>Smitha Rajan</p>
+          <p>It is an ode to Goddess Lalithambika. This Keerthana is performed by smitha Rajan, the granddaughter of...</p>
+          <button class="btn btn-custom">View Details</button>
+      </div>
                 </div>
             </div>
             <button class="carousel-control carousel-control-next" id="nextBtn">&#10095;</button>
@@ -297,17 +359,424 @@
         const carouselTrack = document.getElementById("carouselTrack");
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
+        let currentIndex = 0;
 
-        const scrollAmount = 320;
+        function updateCarousel() {
+            const itemWidth = document.querySelector(".carousel-item-custom").offsetWidth + 20;
+            carouselTrack.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === carouselTrack.children.length - 1;
+        }
 
         nextBtn.addEventListener("click", () => {
-            carouselTrack.scrollBy({ left: scrollAmount, behavior: "smooth" });
+            if (currentIndex < carouselTrack.children.length - 1) {
+                currentIndex++;
+                updateCarousel();
+            }
         });
 
         prevBtn.addEventListener("click", () => {
-            carouselTrack.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
         });
     </script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Custom Programmes Carousel</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <style>
+         .carousel-container {
+             position: relative;
+             width: 80%;
+             margin: auto;
+             overflow: hidden;
+         }
+         .carousel-track {
+             display: flex;
+             gap: 20px;
+             transition: transform 0.5s ease-in-out;
+         }
+         .carousel-item-custom {
+             flex: 0 0 25%;
+             text-align: center;
+         }
+         .carousel-item-custom img {
+             width: 100%;
+             height: 200px;
+             object-fit: cover;
+             border-radius: 10px;
+         }
+         .carousel-control {
+             position: absolute;
+             top: 50%;
+             transform: translateY(-50%);
+             background-color: rgba(0, 0, 0, 0.5);
+             border: none;
+             padding: 10px;
+             cursor: pointer;
+             color: white;
+             font-size: 24px;
+         }
+         .carousel-control-prev { left: 0; }
+         .carousel-control-next { right: 0; }
+     </style>
+ </head>
+ <body>
+ 
+ <div class="container text-center mt-5">
+     <h2>Programmes</h2>
+     <p class="mb-4">A carefully curated classification of our digital archive based on the requirements and training of the viewer.</p>
+ 
+     <div class="carousel-container">
+         <button id="prevBtn" class="carousel-control carousel-control-prev">❮</button>
+         <div class="carousel-track">
+             <div class="carousel-item-custom"><img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Compositions"></div>
+             <div class="carousel-item-custom"><img src="https://www.natyasutraonline.com/images/v5/performance.jpg" alt="Performance"></div>
+             <div class="carousel-item-custom"><img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="Techniques"></div>
+             <div class="carousel-item-custom"><img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" alt="Gita Govinda"></div>
+             <div class="carousel-item-custom"><img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Compositions 2"></div>
+             <div class="carousel-item-custom"><img src="https://www.natyasutraonline.com/images/v5/performance.jpg" alt="Performance 2"></div>
+             <div class="carousel-item-custom"><img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="Techniques 2"></div>
+             <div class="carousel-item-custom"><img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" alt="Gita Govinda 2"></div>
+         </div>
+         <button id="nextBtn" class="carousel-control carousel-control-next">❯</button>
+     </div>
+ </div>
+ 
+ <script>
+ document.addEventListener("DOMContentLoaded", function () {
+     const track = document.querySelector(".carousel-track");
+     const prevBtn = document.getElementById("prevBtn");
+     const nextBtn = document.getElementById("nextBtn");
+     const items = document.querySelectorAll(".carousel-item-custom");
+     let index = 0;
+     const itemWidth = items[0].offsetWidth + 20; // Image width + gap
+     const totalItems = items.length;
+     const visibleItems = 4; // Number of items visible at a time
+ 
+     function moveCarousel() {
+         track.style.transition = "transform 0.5s ease-in-out";
+         track.style.transform = `translateX(-${index * itemWidth}px)`;
+     }
+ 
+     nextBtn.addEventListener("click", function () {
+         if (index >= totalItems - visibleItems) {
+             // If at the end, reset to start
+             index = 0;
+             track.style.transition = "none"; // Remove transition for instant jump
+             track.style.transform = `translateX(0)`;
+             setTimeout(() => {
+                 track.style.transition = "transform 0.5s ease-in-out";
+             }, 50);
+         } else {
+             index++;
+             moveCarousel();
+         }
+     });
+ 
+     prevBtn.addEventListener("click", function () {
+         if (index <= 0) {
+             // If at the start, jump to the last set
+             index = totalItems - visibleItems;
+             track.style.transition = "none"; // Remove transition for instant jump
+             track.style.transform = `translateX(-${index * itemWidth}px)`;
+             setTimeout(() => {
+                 track.style.transition = "transform 0.5s ease-in-out";
+             }, 50);
+         } else {
+             index--;
+             moveCarousel();
+         }
+     });
+ });
+ </script>
+ 
+ </body>
+ </html>
+  -->
+
+
+
+<!-- 
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmes Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Programmes</h2>
+        <p class="text-center">A carefully curated classification of our digital archive based on the requirements and training of the viewer.</p>
+        
+        <div id="programmeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="compositions.jpg" class="d-block w-100" alt="Compositions">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Compositions</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="performance.jpg" class="d-block w-100" alt="Performance">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Performance</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="techniques.jpg" class="d-block w-100" alt="Techniques">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Techniques</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="gita-govinda.jpg" class="d-block w-100" alt="Gita Govinda">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gita Govinda</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#programmeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#programmeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+<!-- <div class="container text-center mt-5">
+  <h2>Programmes</h2>
+  <p class="mb-4">A carefully curated classification of our digital archive based on the requirements and training of the viewer.</p>
+
+  <div id="programmesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      
+      <!-- First Slide -->
+      <!-- <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="program-card">
+              <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Compositions">
+              <div class="program-overlay">Compositions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Slide -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="program-card">
+              <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Performance">
+              <div class="program-overlay">Performance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Slide -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="program-card">
+              <img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="Techniques">
+              <div class="program-overlay">Techniques</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth Slide -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="program-card">
+              <img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" alt="Gita Govinda">
+              <div class="program-overlay">Gita Govinda</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#programmesCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#programmesCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+
+  </div>
+</div>
+
+<style>
+  .program-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .program-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .program-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+</style> --> -->
+
+
+
+
+
+<!-- Bootstrap CSS (Include in head) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container text-center mt-5">
+  <h2>Programmes</h2>
+  <p class="mb-4">A carefully curated classification of our digital archive based on the requirements and training of the viewer.</p>
+
+  <div id="programmesCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="program-card">
+                          <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Compositions" class="w-100">
+                          <div class="program-overlay">Compositions</div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="program-card">
+                          <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Performance" class="w-100">
+                          <div class="program-overlay">Performance</div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="program-card">
+                          <img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="Techniques" class="w-100">
+                          <div class="program-overlay">Techniques</div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="program-card">
+                          <img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" alt="Gita Govinda" class="w-100">
+                          <div class="program-overlay">Gita Govinda</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="program-card">
+                          <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="New Program 1" class="w-100">
+                          <div class="program-overlay">New Program 1</div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="program-card">
+                          <img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="New Program 2" class="w-100">
+                          <div class="program-overlay">New Program 2</div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="program-card">
+                          <img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" alt="New Program 3" class="w-100">
+                          <div class="program-overlay">New Program 3</div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="program-card">
+                          <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="New Program 4" class="w-100">
+                          <div class="program-overlay">New Program 4</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#programmesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#programmesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+  </div>
+</div>
+
+<!-- Bootstrap JS (Include before closing </body> tag) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+  .program-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .program-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+</style>
+
+
