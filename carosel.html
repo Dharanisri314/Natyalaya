@@ -600,7 +600,7 @@
       </div>
 
       <!-- Second Slide -->
-      <div class="carousel-item">
+      <!-- <div class="carousel-item">
         <div class="row">
           <div class="col-md-12">
             <div class="program-card">
@@ -612,7 +612,7 @@
       </div>
 
       <!-- Third Slide -->
-      <div class="carousel-item">
+      <!-- <div class="carousel-item">
         <div class="row">
           <div class="col-md-12">
             <div class="program-card">
@@ -624,7 +624,7 @@
       </div>
 
       <!-- Fourth Slide -->
-      <div class="carousel-item">
+      <!-- <div class="carousel-item">
         <div class="row">
           <div class="col-md-12">
             <div class="program-card">
@@ -638,7 +638,7 @@
     </div>
     
     <!-- Carousel Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#programmesCarousel" data-bs-slide="prev">
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#programmesCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#programmesCarousel" data-bs-slide="next">
@@ -669,24 +669,24 @@
     padding: 5px 10px;
     border-radius: 5px;
   }
-</style> --> -->
+</style> --> --> -->
 
 
 
 
 
 <!-- Bootstrap CSS (Include in head) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <div class="container text-center mt-5">
   <h2>Programmes</h2>
   <p class="mb-4">A carefully curated classification of our digital archive based on the requirements and training of the viewer.</p>
 
   <div id="programmesCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
+      <div class="carousel-inner"> -->
           
           <!-- Slide 1 -->
-          <div class="carousel-item active">
+          <!-- <div class="carousel-item active">
               <div class="row">
                   <div class="col-md-3">
                       <div class="program-card">
@@ -713,10 +713,10 @@
                       </div>
                   </div>
               </div>
-          </div>
+          </div> -->
 
           <!-- Slide 2 -->
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
               <div class="row">
                   <div class="col-md-3">
                       <div class="program-card">
@@ -745,20 +745,20 @@
               </div>
           </div>
 
-      </div>
+      </div> -->
 
       <!-- Carousel Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#programmesCarousel" data-bs-slide="prev">
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#programmesCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#programmesCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
       </button>
   </div>
-</div>
+</div> -->
 
 <!-- Bootstrap JS (Include before closing </body> tag) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <style>
   .program-card {
@@ -777,6 +777,149 @@
     text-align: center;
     padding: 5px;
   }
-</style>
+</style> --> --> --> --> -->
+ -->
 
 
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel One by One</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .carousel-inner {
+      display: flex;
+    }
+    .carousel-item {
+      flex: 0 0 25%; /* Show 4 images at a time */
+    }
+    .program-card {
+      position: relative;
+      text-align: center;
+      padding: 10px;
+    }
+    .program-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .program-overlay {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1rem;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container text-center mt-5">
+  <h2>Programmes</h2>
+  <p class="mb-4">A carefully curated classification of our digital archive based on the requirements and training of the viewer.</p>
+
+  <div id="programmesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      
+      <!-- Images -->
+      <div class="carousel-item active">
+        <div class="program-card">
+          <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Compositions">
+          <div class="program-overlay">Compositions</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="program-card">
+          <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Performance">
+          <div class="program-overlay">Performance</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="program-card">
+          <img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="Techniques">
+          <div class="program-overlay">Techniques</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="program-card">
+          <img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" alt="Gita Govinda">
+          <div class="program-overlay">Gita Govinda</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="program-card">
+          <img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="Extra">
+          <div class="program-overlay">Extra</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#programmesCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#programmesCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript for One-by-One Sliding -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let carousel = document.querySelector("#programmesCarousel");
+  let carouselInner = carousel.querySelector(".carousel-inner");
+  let items = carouselInner.querySelectorAll(".carousel-item");
+  let totalItems = items.length;
+  let visibleItems = 4; // Show 4 images at a time
+  let currentIndex = 0;
+
+  function moveNext() {
+    if (currentIndex < totalItems - visibleItems) {
+      currentIndex++;
+      updateCarousel();
+    }
+  }
+
+  function movePrev() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  }
+
+  function updateCarousel() {
+    let offset = -(currentIndex * (100 / visibleItems)) + "%";
+    carouselInner.style.transform = `translateX(${offset})`;
+  }
+
+  document.querySelector(".carousel-control-next").addEventListener("click", moveNext);
+  document.querySelector(".carousel-control-prev").addEventListener("click", movePrev);
+});
+</script>
+
+</body>
+</html>

@@ -202,7 +202,7 @@
             padding: 40px;
             border-radius: 15px;
             width: 500px;
-            height: 370px;
+            height: 375px;
         }
         .news-card h2 {
             font-weight: bold;
@@ -220,63 +220,35 @@
             text-decoration: none;
         }
     
+       
+
+
+
+
+
+
         .program-card {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .program-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .program-card:hover img {
-            transform: scale(1.05);
-        }
-
-        .program-overlay {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .carousel-control-prev, .carousel-control-next {
-            width: 10%;
-        }
-
-        .carousel-inner {
-            display: flex;
-            gap: 20px;
-        }
-
-
-
-
-
-
-
-        .carousel-inner {
-            display: flex;
-        }
-        .carousel-item {
-            flex: 0 0 25%;
-            display: block;
-        }
-        .carousel-item img {
-            width: 100%;
-            height: auto;
-        }
-
+      position: relative;
+      text-align: center;
+      padding: 10px;
+    }
+    .program-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .program-overlay {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1rem;
+      color: white;
+      
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
 
 
 
@@ -648,52 +620,84 @@
 </div>
   
 
+<div class="container text-center mt-5">
+  <h2>Programmes</h2>
+  <p class="mb-4">A carefully curated classification of our digital archive based on the requirements and training of the viewer.</p>
 
-
-
-<div class="container mt-5">
-  <h2 class="text-center">Programmes</h2>
-  <p class="text-center">A carefully curated classification of our digital archive based on the requirements and training of the viewer.</p>
-  
-  <div id="programmeCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-              <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" class="d-block w-100" alt="Compositions">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>Compositions</h5>
-              </div>
-          </div>
-          <div class="carousel-item active">
-              <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" class="d-block w-100" alt="Performance">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>Performance</h5>
-              </div>
-          </div>
-          <div class="carousel-item active">
-              <img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" class="d-block w-100" alt="Techniques">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>Techniques</h5>
-              </div>
-          </div>
-          <div class="carousel-item active">
-              <img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" class="d-block w-100" alt="Gita Govinda">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>Gita Govinda</h5>
-              </div>
-          </div>
-      </div>
+  <div id="programmesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
       
-      <button class="carousel-control-prev" type="button" data-bs-target="#programmeCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#programmeCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-      </button>
+      <!-- First Slide (Shows 4 images) -->
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="program-card">
+              <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Compositions">
+              <div class="program-overlay">Compositions</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="program-card">
+              <img src="https://www.natyasutraonline.com/images/v5/Intermediate.jpg" alt="Intermediate">
+              <div class="program-overlay">Intermediate</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="program-card">
+              <img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="Techniques">
+              <div class="program-overlay">Techniques</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="program-card">
+              <img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" alt="Gita Govinda">
+              <div class="program-overlay">Gita Govinda</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Slide (Next set of 4 images) -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="program-card">
+              <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Another 1">
+              <div class="program-overlay">Compositions</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="program-card">
+              <img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="Another 2">
+              <div class="program-overlay">Intermediate</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="program-card">
+              <img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" alt="Another 3">
+              <div class="program-overlay">Performance</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="program-card">
+              <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Another 4">
+              <div class="program-overlay">Techniques</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#programmesCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#programmesCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
   </div>
 </div>
-
 
 
 
@@ -772,9 +776,6 @@
                 updateCarousel2();
             }
         });
-
-
-        
   </script>
   
 
