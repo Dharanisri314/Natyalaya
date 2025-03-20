@@ -785,14 +785,14 @@
 
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carousel One by One</title>
-  <!-- Bootstrap 5 CSS -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
@@ -835,7 +835,7 @@
   <div id="programmesCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       
-      <!-- Images -->
+   
       <div class="carousel-item active">
         <div class="program-card">
           <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Compositions">
@@ -873,7 +873,7 @@
 
     </div>
 
-    <!-- Carousel Controls -->
+ 
     <button class="carousel-control-prev" type="button" data-bs-target="#programmesCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </button>
@@ -883,18 +883,17 @@
   </div>
 </div>
 
-<!-- Bootstrap 5 JS -->
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-<!-- Custom JavaScript for One-by-One Sliding -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   let carousel = document.querySelector("#programmesCarousel");
   let carouselInner = carousel.querySelector(".carousel-inner");
   let items = carouselInner.querySelectorAll(".carousel-item");
   let totalItems = items.length;
-  let visibleItems = 4; // Show 4 images at a time
+  let visibleItems = 4; 
   let currentIndex = 0;
 
   function moveNext() {
@@ -922,4 +921,232 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 </body>
+</html>
+
+
+
+
+
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Forms Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .dance-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .dance-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .nav-tabs .nav-link {
+            color: black;
+            font-weight: bold;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #e91e63;
+        }
+
+        .carousel-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .carousel-item img {
+            max-width: 400px;
+        }
+
+        .carousel-content {
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .carousel-content h3 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .carousel-content p {
+            font-size: 1rem;
+            color: gray;
+        }
+
+        .view-details {
+            background-color: #e91e63;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .view-details:hover {
+            background-color: #d81b60;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container dance-section">
+        <h2>Dance Forms</h2>
+        <p>These are the myriad Indian classical dance forms that are accessible on NatyaSutraOnline. Choose an art
+            form of your liking or explore a different strand of India’s heritage.</p>
+
+        <ul class="nav nav-tabs justify-content-center mt-4" id="danceTabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-target="#danceCarousel" data-bs-slide-to="0">Kathak</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-target="#danceCarousel" data-bs-slide-to="1">Bharatanatyam</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-target="#danceCarousel" data-bs-slide-to="2">Mohiniyattam</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-target="#danceCarousel" data-bs-slide-to="3">Kathakali</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-target="#danceCarousel" data-bs-slide-to="4">Odissi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-target="#danceCarousel" data-bs-slide-to="5">Kuchipudi</a>
+            </li>
+        </ul>
+
+        <div id="danceCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="carousel-content">
+                                <h3>Kathak</h3>
+                                <p>Kathak is one of the eight major forms of Indian classical dance. It originated in
+                                    North India and is characterized by intricate footwork and graceful movements.</p>
+                                <a href="#" class="view-details">View Details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/kathak-dance.jpg"
+                                class="img-fluid" alt="Kathak">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="carousel-content">
+                                <h3>Bharatanatyam</h3>
+                                <p>Bharatanatyam is a major classical dance form of South India, known for its
+                                    expressive gestures, intricate footwork, and storytelling elements.</p>
+                                <a href="#" class="view-details">View Details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/bharatanatyam.jpg"
+                                class="img-fluid" alt="Bharatanatyam">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="carousel-content">
+                                <h3>Mohiniyattam</h3>
+                                <p>Mohiniyattam is a graceful dance form from Kerala, distinguished by its swaying
+                                    movements and emphasis on feminine expressions.</p>
+                                <a href="#" class="view-details">View Details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/mohiniyattam.jpg"
+                                class="img-fluid" alt="Mohiniyattam">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="carousel-content">
+                                <h3>Kathakali</h3>
+                                <p>Kathakali is a traditional dance-drama of Kerala, featuring elaborate costumes,
+                                    vibrant makeup, and powerful expressions.</p>
+                                <a href="#" class="view-details">View Details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/kathakali.jpg"
+                                class="img-fluid" alt="Kathakali">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="carousel-content">
+                                <h3>Odissi</h3>
+                                <p>Odissi is a classical dance form from Odisha, known for its fluid movements, sculpted
+                                    postures, and devotion-based themes.</p>
+                                <a href="#" class="view-details">View Details</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/odissi.jpg"
+                                class="img-fluid" alt="Odissi">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#danceCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#danceCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+</body>
+
 </html>

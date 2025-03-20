@@ -12,7 +12,6 @@
   <link href="style.css" rel="stylesheet">
   <title>Dance website</title>
   <style>
-
     .class-card {
       height: 310px;
       background-size: cover;
@@ -27,7 +26,7 @@
     }
 
     .overlay {
-      background: rgb(159 53 53 / 0%);
+
       padding: 10px;
       border-radius: 5px;
     }
@@ -54,6 +53,7 @@
       top: 50%;
       transform: translateY(-50%);
     }
+
     .carousel-container {
       overflow: hidden;
       width: 100%;
@@ -99,145 +99,162 @@
         flex: 0 0 100%;
       }
     }
-     
+
     .carousel-container-2 {
-            position: relative;
-            overflow: hidden;
-            padding: 20px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            margin-top: 10px;
-        }
+      position: relative;
+      overflow: hidden;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 10px;
+    }
 
-        .carousel-track-wrapper-2 {
-            overflow: hidden;
-            width: 80%;
-        }
+    .carousel-track-wrapper-2 {
+      overflow: hidden;
+      width: 80%;
+    }
 
-        .carousel-track-2 {
-            display: flex;
-            gap: 20px;
-            transition: transform 0.5s ease;
-        }
+    .carousel-track-2 {
+      display: flex;
+      gap: 20px;
+      transition: transform 0.5s ease;
+    }
 
-        .carousel-item-custom-2 {
-            flex: 0 0 auto;
-            width: 300px;
-            text-align: center;
-            background: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding-bottom: 15px;
-            height: 450px;
-        }
+    .carousel-item-custom-2 {
+      flex: 0 0 auto;
+      width: 300px;
+      text-align: center;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding-bottom: 15px;
+      height: 450px;
+    }
 
-        .profile-img-2 {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
+    .profile-img-2 {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
 
-        .carousel-control-2 {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            border: none;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            color: white;
-            border-radius: 50%;
-            z-index: 2;
-            opacity: 0.8;
-        }
+    .carousel-control-2 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: white;
+      border-radius: 50%;
+      z-index: 2;
+      opacity: 0.8;
+    }
 
-        .carousel-control-prev-2 { left: 5px; }
-        .carousel-control-next-2 { right: 5px; }
+    .carousel-control-prev-2 {
+      left: 5px;
+    }
 
-        .carousel-control-2:hover {
-            background: rgba(0, 0, 0, 0.9);
-        }
-    
-        .card {
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-            position: relative;
-        }
-        .card img {
-            height: 100%;
-            object-fit: cover;
-        }
-        .badge-top {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        .card-body {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            color: white;
-            padding: 20px;
-        }
-        .news-section {
-            background-color: #f8f9fa;
-            padding: 50px 0;
-        }
-        .news-card {
-            background-color: #c0b4af; /* Light brownish-grey background */
-            color: white;
-            padding: 40px;
-            border-radius: 15px;
-            width: 500px;
-            height: 375px;
-        }
-        .news-card h2 {
-            font-weight: bold;
-        }
-        .news-card p {
-            color: rgba(255, 255, 255, 0.9);
-        }
-        .btn-outline-light {
-            border: 1px solid white;
-        }
-        .social-icons a {
-            color: white;
-            font-size: 20px;
-            margin-right: 10px;
-            text-decoration: none;
-        }
-    
-       
+    .carousel-control-next-2 {
+      right: 5px;
+    }
+
+    .carousel-control-2:hover {
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .badge-top {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .card-body {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      color: white;
+      padding: 20px;
+    }
+
+    .news-section {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+    }
+
+    .news-card {
+      background-color: #c0b4af;
+      /* Light brownish-grey background */
+      color: white;
+      padding: 40px;
+      border-radius: 15px;
+      width: 500px;
+      height: 375px;
+    }
+
+    .news-card h2 {
+      font-weight: bold;
+    }
+
+    .news-card p {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .btn-outline-light {
+      border: 1px solid white;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 20px;
+      margin-right: 10px;
+      text-decoration: none;
+    }
 
 
 
 
 
 
-        .program-card {
+
+
+    .program-card {
       position: relative;
       text-align: center;
       padding: 10px;
     }
+
     .program-card img {
       width: 100%;
       height: 200px;
       object-fit: cover;
       border-radius: 10px;
     }
+
     .program-overlay {
       position: absolute;
       bottom: 10px;
@@ -245,17 +262,41 @@
       transform: translateX(-50%);
       font-size: 1rem;
       color: white;
-      
+
       padding: 5px 10px;
       border-radius: 5px;
     }
 
 
 
+    .class-card {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+    }
 
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgb(222, 222, 222, 0);
+      color: white;
+      padding: 10px;
+      transition: all 0.3s ease-in-out;
+    }
 
+    .class-card:hover .overlay {
+      background: rgba(82, 76, 76, 0.8);
+    }
 
-
+    .badge {
+      background: rgba(255, 255, 255, 0.7);
+      color: black;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.8rem;
+    }
   </style>
 </head>
 
@@ -264,7 +305,7 @@
   <nav class="navbar navbar-expand-lg  fixed-top" id="nav-bar">
     <div class="container-fluid">
       <!-- logo -->
-      <a class="navbar-brand" style="color: white;" href="#">Offcanvas navbar</a>
+      <a class="navbar-brand" style="color: white;" href="#"></a>
       <!-- Toggle Btn -->
 
       <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
@@ -305,35 +346,35 @@
   <div>
     <div class="video-banner" style="height: 450px;">
       <video autoplay muted loop>
-        <source src="https://www.natyasutraonline.com/images/v5/video/ekkadunnavu-naa-chakkani-swami-web.mp4" type="video/mp4">
+        <source src="https://www.natyasutraonline.com/images/v5/video/ekkadunnavu-naa-chakkani-swami-web.mp4"
+          type="video/mp4">
         Your browser does not support the video tag.
       </video>
-  
-        <div class="overlay">
-          <span class="badge" style="background-color: rgba(199, 201, 202, 0.6); color: white;">Kuchipudi</span>
-          <p class="mb-1"><strong>Ekkadunnavu N...</strong></p>
-        </div>
-      
+
+      <div class="overlay">
+        <span class="badge" style="background-color: rgba(199, 201, 202, 0.6); color: white;">Kuchipudi</span>
+        <p class="mb-1"><strong style="font-size: 30px; padding-bottom: 30px; padding-right: 30px;">Ekkadunnavu N...</strong></p>
       </div>
+
     </div>
+  </div>
   </div>
   <div>
 
   </div>
 
-
   <div class="container mt-5">
     <h2 class="text-center">Latest Classes</h2>
     <p class="text-center">
-      Experience our latest class additions featuring mesmerizing dance compositions and standalone performances that
-      beautifully represent the richness of Indian art and culture. Join us now and immerse yourself in the magic.
+      Experience our latest class additions featuring mesmerizing dance compositions and standalone performances
+      that beautifully represent the richness of Indian art and culture. Join us now and immerse yourself in the magic.
     </p>
 
     <div class="row g-4">
       <!-- Large Left Section -->
       <div class="col-lg-6">
         <div class="class-card" style="background-image: url('https://www.natyasutraonline.com/uploads/programme/home_page_img/pralaya-payodhi-jale-n.webp'); 
-                       height: 300px; background-size: cover; background-position: center;">
+                           height: 300px; background-size: cover; background-position: center;">
           <div class="overlay">
             <h4>Pralaya Payodhi Jale</h4>
             <p>Guru Dr. Pali Chandra | Kathak</p>
@@ -348,14 +389,10 @@
           <!-- First Small Card -->
           <div class="col-12 col-md-6">
             <div class="class-card" style="height: 150px; background-image: url('https://www.natyasutraonline.com/uploads/programme/home_page_img/adi-keshava-nritya-prabandham.webp'); 
-                               background-size: cover; background-position: center;">
+                                       background-size: cover; background-position: center;">
               <div class="overlay">
-
-                <span class="badge" style="background-color: rgba(199, 201, 202, 0.6); color: white;">Mohiniyattam</span>
-
+                <span class="badge">Mohiniyattam</span>
                 <p class="mb-1"><strong>Adikeshava Nrit...</strong></p>
-
-
               </div>
             </div>
           </div>
@@ -363,28 +400,28 @@
           <!-- Second Small Card -->
           <div class="col-12 col-md-6">
             <div class="class-card" style="height: 150px; background-image: url('https://www.natyasutraonline.com/uploads/programme/home_page_img/ekkadunnavu-naa-chakkani-swami.webp'); 
-                               background-size: cover; background-position: center;">
+                                       background-size: cover; background-position: center;">
               <div class="overlay">
-                <span class="badge" style="background-color: rgba(199, 201, 202, 0.6); color: white;">Kuchipudi</span>
+                <span class="badge">Kuchipudi</span>
                 <p class="mb-1"><strong>Ekkadunnavu N...</strong></p>
-
               </div>
             </div>
           </div>
 
-          <!-- Two More Cards Below -->
+          <!-- Third Small Card -->
           <div class="col-12 col-md-6">
-            <div class="class-card mb-5" style="height: 150px; width: 280px; background-color: rgb(237, 163, 181);">
-              <div class="overlay">
-                <span class="badge" style="background-color: rgba(199, 201, 202, 0.6); color: white;">Diary Planner</span>
-                <p class="mb-1" style="color: black;"><strong>Celebrating the Natives of Kerala</strong></p>
+            <div class="class-card" style="height: 150px; background-color: rgb(237, 163, 181);">
+              <div class="overlay text-dark">
+                <span class="badge">Diary Planner</span>
+                <p class="mb-1"><strong>Celebrating the Natives of Kerala</strong></p>
               </div>
             </div>
           </div>
 
+          <!-- Fourth Small Card -->
           <div class="col-12 col-md-6">
-            <div class="class-card mb-5" style="height: 150px; background-image: url('https://www.natyasutraonline.com/images/diary2023.webp'); 
-                               background-size: cover; background-position: center;">
+            <div class="class-card" style="height: 150px; background-image: url('https://www.natyasutraonline.com/images/diary2023.webp'); 
+                                       background-size: cover; background-position: center;">
             </div>
           </div>
         </div>
@@ -392,50 +429,66 @@
     </div>
   </div>
 
-
   <div class="container mt-5">
     <h2 class="text-center">Gurus</h2>
-    <p class="text-center">These are brief profiles of the Gurus who form the bedrock of NatyaSutraOnline. Their journeys and passion are a lighthouse, eternally illuminating a path towards the revival of Indian art forms.</p>
+    <p class="text-center">These are brief profiles of the Gurus who form the bedrock of NatyaSutraOnline. Their
+      journeys and passion are a lighthouse, eternally illuminating a path towards the revival of Indian art forms.</p>
 
     <div class="carousel-container position-relative">
       <div class="carousel-track">
         <div class="carousel-item-custom">
-          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/pali-chandraguru-pali-chandra-indian-kathak-dancer-choreographer-and-teacher.webp" class="profile-img" alt="Guru Dr Pali Chandra">
+          <img
+            src="https://www.natyasutraonline.com/uploads/guru/banner_img/pali-chandraguru-pali-chandra-indian-kathak-dancer-choreographer-and-teacher.webp"
+            class="profile-img" alt="Guru Dr Pali Chandra">
           <h5>Guru Dr Pali Chandra</h5>
           <p>Kathak</p>
         </div>
         <div class="carousel-item-custom">
-          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/sujata-mohapatrasujata-mohapatra-disciple-of-guru-kelucharan-mohapatraan-odissi-dancer-and-teacher.webp" class="profile-img" alt="Vidushi Sujata Mohapatra">
+          <img
+            src="https://www.natyasutraonline.com/uploads/guru/banner_img/sujata-mohapatrasujata-mohapatra-disciple-of-guru-kelucharan-mohapatraan-odissi-dancer-and-teacher.webp"
+            class="profile-img" alt="Vidushi Sujata Mohapatra">
           <h5>Vidushi Sujata Mohapatra</h5>
           <p>Odissi</p>
         </div>
         <div class="carousel-item-custom">
-          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/kalamandalam-gopipadma-shree-kalamandalam-gopi-great-kathakali-artist.webp" class="profile-img" alt="Kalamandalam Gopi">
+          <img
+            src="https://www.natyasutraonline.com/uploads/guru/banner_img/kalamandalam-gopipadma-shree-kalamandalam-gopi-great-kathakali-artist.webp"
+            class="profile-img" alt="Kalamandalam Gopi">
           <h5>Kalamandalam Gopi</h5>
           <p>Kathakali</p>
         </div>
         <div class="carousel-item-custom">
-          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/smitha-rajansmitha-rajan-mohiniyattam-performer-and-choreographer.webp" class="profile-img" alt="Smitha Rajan">
+          <img
+            src="https://www.natyasutraonline.com/uploads/guru/banner_img/smitha-rajansmitha-rajan-mohiniyattam-performer-and-choreographer.webp"
+            class="profile-img" alt="Smitha Rajan">
           <h5>Smitha Rajan</h5>
           <p>Mohiniyattam</p>
         </div>
         <div class="carousel-item-custom">
-          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/sreelakshmy-govardhanansreelakshmy-govardhanan-kuchipudi-dancer-choreographer-and-teacher.webp" class="profile-img" alt="Sreelakshmy Govardhanan">
+          <img
+            src="https://www.natyasutraonline.com/uploads/guru/banner_img/sreelakshmy-govardhanansreelakshmy-govardhanan-kuchipudi-dancer-choreographer-and-teacher.webp"
+            class="profile-img" alt="Sreelakshmy Govardhanan">
           <h5>Sreelakshmy Govardhanan</h5>
           <p>Kuchipudi</p>
         </div>
         <div class="carousel-item-custom">
-          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/rajashree-warrierrajashree-warrier-bharatanatyam-dancer-classical-musician-and-a-media-person.webp" class="profile-img" alt="Dr Rajashree Warrier">
+          <img
+            src="https://www.natyasutraonline.com/uploads/guru/banner_img/rajashree-warrierrajashree-warrier-bharatanatyam-dancer-classical-musician-and-a-media-person.webp"
+            class="profile-img" alt="Dr Rajashree Warrier">
           <h5>Dr Rajashree Warrier</h5>
           <p>Bharatanatyam</p>
         </div>
         <div class="carousel-item-custom">
-          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/neena-prasadneena-prasad-mohiniyattam-dancer.webp" class="profile-img" alt="Dr Neena Prasad">
+          <img
+            src="https://www.natyasutraonline.com/uploads/guru/banner_img/neena-prasadneena-prasad-mohiniyattam-dancer.webp"
+            class="profile-img" alt="Dr Neena Prasad">
           <h5>Dr Neena Prasad</h5>
           <p>Mohiniyattam</p>
         </div>
         <div class="carousel-item-custom">
-          <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/rama-vaidyanathanrama-vaidyanathan-is-a-bharatanatyam-dancer-and-teacher1.webp" class="profile-img" alt="Rama Vaidyanathan">
+          <img
+            src="https://www.natyasutraonline.com/uploads/guru/banner_img/rama-vaidyanathanrama-vaidyanathan-is-a-bharatanatyam-dancer-and-teacher1.webp"
+            class="profile-img" alt="Rama Vaidyanathan">
           <h5>Rama Vaidyanathan</h5>
           <p>Bharatanatyam</p>
         </div>
@@ -452,252 +505,282 @@
   </div>
 
 
-    <div class="container mt-5 text-center">
-      <h2>Dance Classes</h2>
-      <p>Explore our dance classes to learn traditional and classical Indian art forms rooted in culture.</p>
+  <div class="container mt-5 text-center">
+    <h2>Dance Classes</h2>
+    <p>Explore our dance classes to learn traditional and classical Indian art forms rooted in culture.</p>
 
-      <div class="carousel-container-2">
-          <button class="carousel-control-2 carousel-control-prev-2" id="prevBtn2" disabled>&#10094;</button>
-          <div class="carousel-track-wrapper-2">
-              <div class="carousel-track-2" id="carouselTrack2">
-                  <div class="carousel-item-custom-2">
-                      <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/smitha-rajansmitha-rajan-mohiniyattam-performer-and-choreographer.webp" class="profile-img-2" alt="Smitha Rajan">
-                      <h5>Padam Kanden...</h5>
-                      <p>Smitha Rajan</p>
-                      <p>Smitha Rajan takes us on a mystical journey in this Mohiniyattam...</p>
-                      <button class="btn btn-custom">View Details</button>
-                  </div>
-                  <div class="carousel-item-custom-2">
-                      <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/neena-prasadneena-prasad-mohiniyattam-dancer.webp" class="profile-img-2" alt="Dr Neena Prasad">
-                      <h5>Ananda Bhairavi...</h5>
-                      <p>Dr Neena Prasad</p>
-                      <p>Dr. Neena Prasad's teachings commence with an overview of the Swarajathi...</p>
-                      <button class="btn btn-custom">View Details</button>
-                  </div>
-                  <div class="carousel-item-custom-2">
-                    <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/sundara-syama.webp" class="profile-img-2" alt="Dr Neena Prasad">
-                    <h5>Sundara Syama</h5>
-                    <p>Geeta Chandran</p>
-                    <p>Sundara Shyama Sundara Bala Leela, a Surdas Padh choreographed...</p>
-                    <button class="btn btn-custom">View Details</button>
-                </div>
-                <div class="carousel-item-custom-2">
-                  <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/ardhanareeswara-ashtakam1.webp" class="profile-img-2" alt="Dr Neena Prasad">
-                  <h5>Ardhanareeswara Ashtakam</h5>
-                  <p>Rama Vaidyanathan</p>
-                  <p>Rama Vaidyanathan explores the duality of Lord Shive and Goddess Parvati, with a Bharatanatyam composition on Their...</p>
-                  <button class="btn btn-custom">View Details</button>
-              </div>
-              <div class="carousel-item-custom-2">
-                <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/beginners-lessons10.webp" class="profile-img-2" alt="Dr Neena Prasad">
-                <h5>Beginners Lessons</h5>
-                <p>Dr Rajashree Warrier</p>
-                <p>These classes are for absolute beginners to Kathak. Guru Pali Chandra aims at establishing the foundation among her...</p>
-                <button class="btn btn-custom">View Details</button>
-            </div>
-            <div class="carousel-item-custom-2">
-              <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/bhogeendra-sayinam1.webp" class="profile-img-2" alt="Dr Neena Prasad">
-              <h5>Bhogeendra Sayinam</h5>
-              <p>Dr Rajashree Warrier</p>
-              <p>Learn Bharatanatyam composition Bhogeendra Sayinam, a tribute to vishnu , seated atop the serpent Anantha or Adi...</p>
-              <button class="btn btn-custom">View Details</button>
+    <div class="carousel-container-2">
+      <button class="carousel-control-2 carousel-control-prev-2" id="prevBtn2" disabled>&#10094;</button>
+      <div class="carousel-track-wrapper-2">
+        <div class="carousel-track-2" id="carouselTrack2">
+          <div class="carousel-item-custom-2">
+            <img
+              src="https://www.natyasutraonline.com/uploads/guru/banner_img/smitha-rajansmitha-rajan-mohiniyattam-performer-and-choreographer.webp"
+              class="profile-img-2" alt="Smitha Rajan">
+            <h5>Padam Kanden...</h5>
+            <p>Smitha Rajan</p>
+            <p>Smitha Rajan takes us on a mystical journey in this Mohiniyattam...</p>
+            <button class="btn btn-custom">View Details</button>
           </div>
           <div class="carousel-item-custom-2">
-            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/lalitha-lavanga4.webp" class="profile-img-2" alt="Dr Neena Prasad">
+            <img
+              src="https://www.natyasutraonline.com/uploads/guru/banner_img/neena-prasadneena-prasad-mohiniyattam-dancer.webp"
+              class="profile-img-2" alt="Dr Neena Prasad">
+            <h5>Ananda Bhairavi...</h5>
+            <p>Dr Neena Prasad</p>
+            <p>Dr. Neena Prasad's teachings commence with an overview of the Swarajathi...</p>
+            <button class="btn btn-custom">View Details</button>
+          </div>
+          <div class="carousel-item-custom-2">
+            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/sundara-syama.webp"
+              class="profile-img-2" alt="Dr Neena Prasad">
+            <h5>Sundara Syama</h5>
+            <p>Geeta Chandran</p>
+            <p>Sundara Shyama Sundara Bala Leela, a Surdas Padh choreographed...</p>
+            <button class="btn btn-custom">View Details</button>
+          </div>
+          <div class="carousel-item-custom-2">
+            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/ardhanareeswara-ashtakam1.webp"
+              class="profile-img-2" alt="Dr Neena Prasad">
+            <h5>Ardhanareeswara Ashtakam</h5>
+            <p>Rama Vaidyanathan</p>
+            <p>Rama Vaidyanathan explores the duality of Lord Shive and Goddess Parvati, with a Bharatanatyam
+              composition on Their...</p>
+            <button class="btn btn-custom">View Details</button>
+          </div>
+          <div class="carousel-item-custom-2">
+            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/beginners-lessons10.webp"
+              class="profile-img-2" alt="Dr Neena Prasad">
+            <h5>Beginners Lessons</h5>
+            <p>Dr Rajashree Warrier</p>
+            <p>These classes are for absolute beginners to Kathak. Guru Pali Chandra aims at establishing the foundation
+              among her...</p>
+            <button class="btn btn-custom">View Details</button>
+          </div>
+          <div class="carousel-item-custom-2">
+            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/bhogeendra-sayinam1.webp"
+              class="profile-img-2" alt="Dr Neena Prasad">
+            <h5>Bhogeendra Sayinam</h5>
+            <p>Dr Rajashree Warrier</p>
+            <p>Learn Bharatanatyam composition Bhogeendra Sayinam, a tribute to vishnu , seated atop the serpent Anantha
+              or Adi...</p>
+            <button class="btn btn-custom">View Details</button>
+          </div>
+          <div class="carousel-item-custom-2">
+            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/lalitha-lavanga4.webp"
+              class="profile-img-2" alt="Dr Neena Prasad">
             <h5>Lalitha Lavanga</h5>
             <p>Gura Dr pali Chandra</p>
-            <p>The effect of the spring season on humans, Nature and divine beings were described in the Lalitha Lavanga...</p>
+            <p>The effect of the spring season on humans, Nature and divine beings were described in the Lalitha
+              Lavanga...</p>
             <button class="btn btn-custom">View Details</button>
-        </div>
-        <div class="carousel-item-custom-2">
-          <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/angika-bharatanatyam-methods-and-beyond2.webp" class="profile-img-2" alt="Dr Neena Prasad">
-          <h5>ANGIKA : Bharatanatyam Methods and...</h5>
-          <p>Dr Rajashree Warrier</p>
-          <p>Dr. Rajashree Warrier focuses on how a student must pali-chandraguru-pali-chandra-indian-kathak-dancer-choreographer-and-teacher and elaborate the teachings of Abhinaya Darpana . The studen...</p>
-          <button class="btn btn-custom">View Details</button>
-      </div>
-      <div class="carousel-item-custom-2">
-        <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/sri-chakra-raja2.webp" class="profile-img-2" alt="Dr Neena Prasad">
-        <h5>Sri Chakra Raja...</h5>
-        <p>Smitha Rajan</p>
-        <p>It is an ode to Goddess Lalithambika. This Keerthana is performed by smitha Rajan, the granddaughter of...</p>
-        <button class="btn btn-custom">View Details</button>
-    </div>
-              </div>
           </div>
-          <button class="carousel-control-2 carousel-control-next-2" id="nextBtn2">&#10095;</button>
+          <div class="carousel-item-custom-2">
+            <img
+              src="https://www.natyasutraonline.com/uploads/programme/home_page_img/angika-bharatanatyam-methods-and-beyond2.webp"
+              class="profile-img-2" alt="Dr Neena Prasad">
+            <h5>ANGIKA : Bharatanatyam Methods and...</h5>
+            <p>Dr Rajashree Warrier</p>
+            <p>Dr. Rajashree Warrier focuses on how a student must
+              pali-chandraguru-pali-chandra-indian-kathak-dancer-choreographer-and-teacher and elaborate the teachings
+              of Abhinaya Darpana . The studen...</p>
+            <button class="btn btn-custom">View Details</button>
+          </div>
+          <div class="carousel-item-custom-2">
+            <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/sri-chakra-raja2.webp"
+              class="profile-img-2" alt="Dr Neena Prasad">
+            <h5>Sri Chakra Raja...</h5>
+            <p>Smitha Rajan</p>
+            <p>It is an ode to Goddess Lalithambika. This Keerthana is performed by smitha Rajan, the granddaughter
+              of...</p>
+            <button class="btn btn-custom">View Details</button>
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-2 carousel-control-next-2" id="nextBtn2">&#10095;</button>
+    </div>
   </div>
 
 
   <div class="carousel-container-2">
     <div class="carousel-track-wrapper-2">
-        <div class="carousel-track-2" id="carouselTrack2">
-            <div class="carousel-item-custom-2">
-                <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/smitha-rajansmitha-rajan-mohiniyattam-performer-and-choreographer.webp" class="profile-img-2" alt="Smitha Rajan">
-                <h5>Padam Kanden...</h5>
-                <p>Smitha Rajan</p>
-                <p>Smitha Rajan takes us on a mystical journey in this Mohiniyattam...</p>
-                <button class="btn btn-custom">View Details</button>
-            </div>
-            <div class="carousel-item-custom-2">
-                <img src="https://www.natyasutraonline.com/uploads/guru/banner_img/neena-prasadneena-prasad-mohiniyattam-dancer.webp" class="profile-img-2" alt="Dr Neena Prasad">
-                <h5>Ananda Bhairavi...</h5>
-                <p>Dr Neena Prasad</p>
-                <p>Dr. Neena Prasad's teachings commence with an overview of the Swarajathi...</p>
-                <button class="btn btn-custom">View Details</button>
-            </div>
-            <div class="carousel-item-custom-2">
-              <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/sundara-syama.webp" class="profile-img-2" alt="Dr Neena Prasad">
-              <h5>Sundara Syama</h5>
-              <p>Geeta Chandran</p>
-              <p>Sundara Shyama Sundara Bala Leela, a Surdas Padh choreographed...</p>
-              <button class="btn btn-custom">View Details</button>
+      <div class="carousel-track-2" id="carouselTrack2">
+        <div class="carousel-item-custom-2">
+          <img
+            src="https://www.natyasutraonline.com/uploads/guru/banner_img/smitha-rajansmitha-rajan-mohiniyattam-performer-and-choreographer.webp"
+            class="profile-img-2" alt="Smitha Rajan">
+          <h5>Padam Kanden...</h5>
+          <p>Smitha Rajan</p>
+          <p>Smitha Rajan takes us on a mystical journey in this Mohiniyattam...</p>
+          <button class="btn btn-custom">View Details</button>
+        </div>
+        <div class="carousel-item-custom-2">
+          <img
+            src="https://www.natyasutraonline.com/uploads/guru/banner_img/neena-prasadneena-prasad-mohiniyattam-dancer.webp"
+            class="profile-img-2" alt="Dr Neena Prasad">
+          <h5>Ananda Bhairavi...</h5>
+          <p>Dr Neena Prasad</p>
+          <p>Dr. Neena Prasad's teachings commence with an overview of the Swarajathi...</p>
+          <button class="btn btn-custom">View Details</button>
+        </div>
+        <div class="carousel-item-custom-2">
+          <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/sundara-syama.webp"
+            class="profile-img-2" alt="Dr Neena Prasad">
+          <h5>Sundara Syama</h5>
+          <p>Geeta Chandran</p>
+          <p>Sundara Shyama Sundara Bala Leela, a Surdas Padh choreographed...</p>
+          <button class="btn btn-custom">View Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card">
+          <span class="badge-top" style="background-color: rgba(208, 197, 197, 0.8); color: white;">Odissi</span>
+          <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/odissi-beginners-lessons2.webp"
+            class="card-img-top" alt="Odissi Dance">
+          <div class="card-body">
+            <h5 class="card-title">Vidushi Sujata Mohapatra</h5>
+            <p class="card-text"><strong>Odissi Beginners Lessons</strong></p>
+            <p class="card-text">Sujata Mohapatra gives an overview of Odissi Beginners Lessons. It contains decades of
+              knowledge...</p>
+            <a href="#" class="btn btn-outline-light">View Details</a>
           </div>
         </div>
-    </div>
-    </div>
-
-
-    <div class="container my-5">
-      <div class="row g-4">
-          <div class="col-md-6">
-              <div class="card">
-                  <span class="badge-top" style="background-color: rgba(208, 197, 197, 0.8); color: white;">Odissi</span>
-                  <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/odissi-beginners-lessons2.webp" class="card-img-top" alt="Odissi Dance">
-                  <div class="card-body">
-                      <h5 class="card-title">Vidushi Sujata Mohapatra</h5>
-                      <p class="card-text"><strong>Odissi Beginners Lessons</strong></p>
-                      <p class="card-text">Sujata Mohapatra gives an overview of Odissi Beginners Lessons. It contains decades of knowledge...</p>
-                      <a href="#" class="btn btn-outline-light">View Details</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-6">
-              <div class="card">
-                  <span class="badge-top"  style="background-color:  rgba(208, 197, 197, 0.8); color: white;">Kuchipudi</span>
-                  <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/kuchipudi-beginners-lessons.webp" class="card-img-top" alt="Kuchipudi Dance">
-                  <div class="card-body">
-                      <h5 class="card-title">Sreelakshmy Govardhanan</h5>
-                      <p class="card-text"><strong>Kuchipudi Beginners Lessons</strong></p>
-                      <p class="card-text">Sreelakshmy Govardhanan introduces the viewer to her journey in Kuchipudi...</p>
-                      <a href="#" class="btn btn-outline-light">View Details</a>
-                  </div>
-              </div>
-          </div>
       </div>
+      <div class="col-md-6">
+        <div class="card">
+          <span class="badge-top" style="background-color:  rgba(208, 197, 197, 0.8); color: white;">Kuchipudi</span>
+          <img src="https://www.natyasutraonline.com/uploads/programme/home_page_img/kuchipudi-beginners-lessons.webp"
+            class="card-img-top" alt="Kuchipudi Dance">
+          <div class="card-body">
+            <h5 class="card-title">Sreelakshmy Govardhanan</h5>
+            <p class="card-text"><strong>Kuchipudi Beginners Lessons</strong></p>
+            <p class="card-text">Sreelakshmy Govardhanan introduces the viewer to her journey in Kuchipudi...</p>
+            <a href="#" class="btn btn-outline-light">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  
+
 
   <div class="container news-section">
     <div class="text-center mb-4">
-        <h1 class="fw-bold">News and Updates</h1>
-        <p class="text-muted">
-            Stay informed about the newest classes, webinars, and workshops on offer by Team NatyaSutraOnline. 
-            We are actively adding and showcasing fresh sessions, talks, and regional exponents of Indian art and culture.
-        </p>
+      <h1 class="fw-bold">News and Updates</h1>
+      <p class="text-muted">
+        Stay informed about the newest classes, webinars, and workshops on offer by Team NatyaSutraOnline.
+        We are actively adding and showcasing fresh sessions, talks, and regional exponents of Indian art and culture.
+      </p>
     </div>
 
     <div class="row align-items-center">
-        <div class="col-md-6">
-            <div class="news-card">
-                <h2>Great news Mohiniyattam students!</h2>
-                <p>
-                    Great news Mohiniyattam students! Prominent scholar Deepti Omchery Bhalla joins the Natyasutra family. 
-                    Natyasutra is thrilled to...
-                </p>
-                <a href="#" class="btn btn-outline-light">View Details</a>
-                <div class="social-icons mt-3">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <img src="https://www.natyasutraonline.com/uploads/latestupdates/great-news-mohiniyattam-students-prominent-scholar-deepti-omcherry-bhalla-joins-the-natyasutra-family1.jpg" class="img-fluid rounded" alt="Mohiniyattam Dancer">
-        </div>
-    </div>
-</div>
-  
-
-<div class="container text-center mt-5">
-  <h2>Programmes</h2>
-  <p class="mb-4">A carefully curated classification of our digital archive based on the requirements and training of the viewer.</p>
-
-  <div id="programmesCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      
-      <!-- First Slide (Shows 4 images) -->
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="program-card">
-              <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Compositions">
-              <div class="program-overlay">Compositions</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="program-card">
-              <img src="https://www.natyasutraonline.com/images/v5/Intermediate.jpg" alt="Intermediate">
-              <div class="program-overlay">Intermediate</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="program-card">
-              <img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="Techniques">
-              <div class="program-overlay">Techniques</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="program-card">
-              <img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" alt="Gita Govinda">
-              <div class="program-overlay">Gita Govinda</div>
-            </div>
+      <div class="col-md-6">
+        <div class="news-card">
+          <h2>Great news Mohiniyattam students!</h2>
+          <p>
+            Great news Mohiniyattam students! Prominent scholar Deepti Omchery Bhalla joins the Natyasutra family.
+            Natyasutra is thrilled to...
+          </p>
+          <a href="#" class="btn btn-outline-light">View Details</a>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>
-
-      <!-- Second Slide (Next set of 4 images) -->
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="program-card">
-              <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Another 1">
-              <div class="program-overlay">Compositions</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="program-card">
-              <img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="Another 2">
-              <div class="program-overlay">Intermediate</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="program-card">
-              <img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" alt="Another 3">
-              <div class="program-overlay">Performance</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="program-card">
-              <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Another 4">
-              <div class="program-overlay">Techniques</div>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-6">
+        <img
+          src="https://www.natyasutraonline.com/uploads/latestupdates/great-news-mohiniyattam-students-prominent-scholar-deepti-omcherry-bhalla-joins-the-natyasutra-family1.jpg"
+          class="img-fluid rounded" alt="Mohiniyattam Dancer">
       </div>
-
     </div>
-
-    <!-- Carousel Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#programmesCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#programmesCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </button>
   </div>
-</div>
+
+
+  <div class="container text-center mt-5">
+    <h2>Programmes</h2>
+    <p class="mb-4">A carefully curated classification of our digital archive based on the requirements and training of
+      the viewer.</p>
+
+    <div id="programmesCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- First Slide (Shows 4 images) -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Compositions">
+                <div class="program-overlay">Compositions</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/images/v5/Intermediate.jpg" alt="Intermediate">
+                <div class="program-overlay">Intermediate</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="Techniques">
+                <div class="program-overlay">Techniques</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" alt="Gita Govinda">
+                <div class="program-overlay">Gita Govinda</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Slide (Next set of 4 images) -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Another 1">
+                <div class="program-overlay">Compositions</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/images/v5/techniques.jpg" alt="Another 2">
+                <div class="program-overlay">Intermediate</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/images/v5/gita-govinda-programmes.webp" alt="Another 3">
+                <div class="program-overlay">Performance</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/images/v5/compositions.jpg" alt="Another 4">
+                <div class="program-overlay">Techniques</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#programmesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#programmesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
 
 
 
@@ -712,12 +795,12 @@
       const itemWidth = items[0].offsetWidth + 20; // Image width + padding
       const totalItems = items.length;
       const visibleItems = 4; // Number of items visible at a time
-  
+
       function moveCarousel() {
         track.style.transition = "transform 0.5s ease-in-out";
         track.style.transform = `translateX(-${index * itemWidth}px)`;
       }
-  
+
       nextBtn.addEventListener("click", function () {
         if (index >= totalItems - visibleItems) {
           // If at the end, reset to start
@@ -732,7 +815,9 @@
           moveCarousel();
         }
       });
-  
+
+      
+
       prevBtn.addEventListener("click", function () {
         if (index <= 0) {
           // If at the start, jump to the last set
@@ -752,39 +837,36 @@
 
 
     const carouselTrack2 = document.getElementById("carouselTrack2");
-        const prevBtn2 = document.getElementById("prevBtn2");
-        const nextBtn2 = document.getElementById("nextBtn2");
-        let currentIndex2 = 0;
+    const prevBtn2 = document.getElementById("prevBtn2");
+    const nextBtn2 = document.getElementById("nextBtn2");
+    let currentIndex2 = 0;
 
-        function updateCarousel2() {
-            const itemWidth = document.querySelector(".carousel-item-custom-2").offsetWidth + 20;
-            carouselTrack2.style.transform = `translateX(-${currentIndex2 * itemWidth}px)`;
-            prevBtn2.disabled = currentIndex2 === 0;
-            nextBtn2.disabled = currentIndex2 === carouselTrack2.children.length - 1;
-        }
+    function updateCarousel2() {
+      const itemWidth = document.querySelector(".carousel-item-custom-2").offsetWidth + 20;
+      carouselTrack2.style.transform = `translateX(-${currentIndex2 * itemWidth}px)`;
+      prevBtn2.disabled = currentIndex2 === 0;
+      nextBtn2.disabled = currentIndex2 === carouselTrack2.children.length - 1;
+    }
 
-        nextBtn2.addEventListener("click", () => {
-            if (currentIndex2 < carouselTrack2.children.length - 1) {
-                currentIndex2++;
-                updateCarousel2();
-            }
-        });
+    nextBtn2.addEventListener("click", () => {
+      if (currentIndex2 < carouselTrack2.children.length - 1) {
+        currentIndex2++;
+        updateCarousel2();
+      }
+    });
 
-        prevBtn2.addEventListener("click", () => {
-            if (currentIndex2 > 0) {
-                currentIndex2--;
-                updateCarousel2();
-            }
-        });
+    prevBtn2.addEventListener("click", () => {
+      if (currentIndex2 > 0) {
+        currentIndex2--;
+        updateCarousel2();
+      }
+    });
+
   </script>
-  
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
-
-
 </body>
 
 </html>
