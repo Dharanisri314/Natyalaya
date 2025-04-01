@@ -10,6 +10,8 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <link href="style.css" rel="stylesheet">
+  <link href="details.js" rel="stylesheet">
+  <link href="details.json" rel="stylesheet">
   <title>Dance website</title>
   <style>
     .class-card {
@@ -297,66 +299,64 @@
       border-radius: 5px;
       font-size: 0.8rem;
     }
+
+    .bg-dark {
+      background-color: (33, 37, 41, 0.47);
+    }
   </style>
 </head>
 
-<body class="vh-100">
-  <!-- Navber -->
-  <nav class="navbar navbar-expand-lg  fixed-top" id="nav-bar">
+<body>
+  <nav class="navbar navbar-dark fixed-top">
     <div class="container-fluid">
-      <!-- logo -->
-      <a class="navbar-brand" style="color: white;" href="#"></a>
-      <!-- Toggle Btn -->
-
-      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" style="background-color: black;"></span>
+      <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- SideBar -->
-
-      <div class="SideBar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <button type="button" class="btn-close" style="color: black;" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#" style="color: black;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">All class</a>
+              <a class="nav-link" href="#" style="color: black;">All Classes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Recent Performances</a>
+              <a class="nav-link" href="#" style="color: black;">Gita Govinda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Free Viedos</a>
+              <a class="nav-link" href="#" style="color: black;">Free Videos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              <a class="nav-link" href="#" style="color: black;">About Us</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
-  <div>
-    <div class="video-banner" style="height: 450px;">
-      <video autoplay muted loop>
-        <source src="https://www.natyasutraonline.com/images/v5/video/ekkadunnavu-naa-chakkani-swami-web.mp4"
-          type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+  <div class="video-banner" style="height: 450px;">
+    <video autoplay muted loop>
+      <source src="https://www.natyasutraonline.com/images/v5/video/ekkadunnavu-naa-chakkani-swami-web.mp4"
+        type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
-      <div class="overlay">
-        <span class="badge" style="background-color: rgba(199, 201, 202, 0.6); color: white;">Kuchipudi</span>
-        <p class="mb-1"><strong style="font-size: 30px; padding-bottom: 30px; padding-right: 30px;">Ekkadunnavu N...</strong></p>
-      </div>
-
+    <div class="overlay">
+      <span class="badge" style="background-color: rgba(199, 201, 202, 0.6); color: white;">Kuchipudi</span>
+      <p class="mb-1"><strong style="font-size: 30px; padding-bottom: 30px; padding-right: 30px;">Ekkadunnavu
+          N...</strong></p>
     </div>
+
+  </div>
   </div>
   </div>
   <div>
@@ -373,39 +373,46 @@
     <div class="row g-4">
       <!-- Large Left Section -->
       <div class="col-lg-6">
-        <div class="class-card" style="background-image: url('https://www.natyasutraonline.com/uploads/programme/home_page_img/pralaya-payodhi-jale-n.webp'); 
-                           height: 300px; background-size: cover; background-position: center;">
-          <div class="overlay">
-            <h4>Pralaya Payodhi Jale</h4>
-            <p>Guru Dr. Pali Chandra | Kathak</p>
-            <a href="#" class="btn btn-light btn-sm">Learn More</a>
+        <a href="details1.html"> <!-- Add anchor tag around the card -->
+          <div class="class-card" style="background-image: url('https://www.natyasutraonline.com/uploads/programme/home_page_img/pralaya-payodhi-jale-n.webp'); 
+                               height: 300px; background-size: cover; background-position: center;">
+            <div class="overlay">
+              <h4>Pralaya Payodhi Jale</h4>
+              <p>Guru Dr. Pali Chandra | Kathak</p>
+              <span class="btn btn-light btn-sm">Learn More</span>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
+
 
       <!-- Right Column -->
       <div class="col-lg-6">
         <div class="row g-3">
           <!-- First Small Card -->
           <div class="col-12 col-md-6">
-            <div class="class-card" style="height: 150px; background-image: url('https://www.natyasutraonline.com/uploads/programme/home_page_img/adi-keshava-nritya-prabandham.webp'); 
-                                       background-size: cover; background-position: center;">
-              <div class="overlay">
-                <span class="badge">Mohiniyattam</span>
-                <p class="mb-1"><strong>Adikeshava Nrit...</strong></p>
+            <a href="details2.html">
+              <div class="class-card" style="height: 150px; background-image: url('https://www.natyasutraonline.com/uploads/programme/home_page_img/adi-keshava-nritya-prabandham.webp'); 
+              background-size: cover; background-position: center;">
+                <div class="overlay">
+                  <span class="badge">Mohiniyattam</span>
+                  <p class="mb-1"><strong>Adikeshava Nrit...</strong></p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <!-- Second Small Card -->
           <div class="col-12 col-md-6">
-            <div class="class-card" style="height: 150px; background-image: url('https://www.natyasutraonline.com/uploads/programme/home_page_img/ekkadunnavu-naa-chakkani-swami.webp'); 
-                                       background-size: cover; background-position: center;">
-              <div class="overlay">
-                <span class="badge">Kuchipudi</span>
-                <p class="mb-1"><strong>Ekkadunnavu N...</strong></p>
+            <a href="details3.html">
+              <div class="class-card" style="height: 150px; background-image: url('https://www.natyasutraonline.com/uploads/programme/home_page_img/ekkadunnavu-naa-chakkani-swami.webp'); 
+              background-size: cover; background-position: center;">
+                <div class="overlay">
+                  <span class="badge">Kuchipudi</span>
+                  <p class="mb-1"><strong>Ekkadunnavu N...</strong></p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <!-- Third Small Card -->
@@ -428,6 +435,7 @@
       </div>
     </div>
   </div>
+
 
   <div class="container mt-5">
     <h2 class="text-center">Gurus</h2>
@@ -677,7 +685,6 @@
         We are actively adding and showcasing fresh sessions, talks, and regional exponents of Indian art and culture.
       </p>
     </div>
-
     <div class="row align-items-center">
       <div class="col-md-6">
         <div class="news-card">
@@ -702,14 +709,13 @@
   </div>
 
 
+  <!-- Programmes Section -->
   <div class="container text-center mt-5">
     <h2>Programmes</h2>
     <p class="mb-4">A carefully curated classification of our digital archive based on the requirements and training of
       the viewer.</p>
-
     <div id="programmesCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-
         <!-- First Slide (Shows 4 images) -->
         <div class="carousel-item active">
           <div class="row">
@@ -739,7 +745,6 @@
             </div>
           </div>
         </div>
-
         <!-- Second Slide (Next set of 4 images) -->
         <div class="carousel-item">
           <div class="row">
@@ -769,7 +774,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- Carousel Controls -->
@@ -782,10 +786,156 @@
     </div>
   </div>
 
+  <!-- Free Videos Section -->
+  <div class="container text-center mt-5">
+    <h2>Free Videos</h2>
+    <p class="mb-4">These free videos aim to introduce our audience to a wide range of esoteric disciplines, endemic to
+      India’s shores. This is part of our pledge to revitalize the Indian Classical ecosystem.</p>
 
+    <div id="freeVideosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <!-- First Slide (Shows 4 images) -->
+        <div class="carousel-item active">
+          <div class="row gx-3">
+            <div class="col-md-3">
+              <div class="program-card">
+                <img
+                  src="https://www.natyasutraonline.com/uploads/freeclass/home_page_img/gita-govinda-or-ashtapadi.jpg"
+                  class="d-block w-100" alt="Compositions">
+                <p>Gita Govinda or Ashtapadi</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/uploads/freeclass/home_page_img/bharatanatyam.jpg"
+                  class="d-block w-100" alt="Intermediate">
+                <p>Bharatanatyam</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/uploads/freeclass/home_page_img/neela-varnam1.jpg"
+                  class="d-block w-100" alt="Techniques">
+                <p>Neela Varnam</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/uploads/freeclass/home_page_img/mohiniyattam1.jpg"
+                  class="d-block w-100" alt="Gita Govinda">
+                <p>Mohiniyattam</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Slide (Next set of 4 images) -->
+        <div class="carousel-item">
+          <div class="row gx-3">
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/uploads/freeclass/home_page_img/manipuri.jpg"
+                  class="d-block w-100" alt="Another 1">
+                <p>Manipuri</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/uploads/freeclass/home_page_img/kathak.jpg"
+                  class="d-block w-100" alt="Another 2">
+                <p>Kathak</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/uploads/freeclass/home_page_img/mohiniyattam.jpg"
+                  class="d-block w-100" alt="Another 3">
+                <p>Mohiniyattam</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="program-card">
+                <img src="https://www.natyasutraonline.com/uploads/freeclass/home_page_img/tired-of-being-locked-in.jpg"
+                  class="d-block w-100" alt="Another 4">
+                <p>Tired of being locked-in?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#freeVideosCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#freeVideosCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
 
+  <footer class="bg-light pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p><strong>NatyaSutra</strong> is an attempt to permanently preserve the rich art and cultural heritage of
+            India. Our dream is to provide 24/7 online access to personalized lectures, tutorials, classes, and
+            performances of all Indian art and culture.</p>
+        </div>
+        <div class="col-md-2">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled" style="  text-decoration: none;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dance</a></li>
+            <li><a href="#">Gurus</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Programmes</a></li>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6>Explore</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Nature</a></li>
+            <li><a href="#">Picture Gallery</a></li>
+            <li><a href="#">Video Gallery</a></li>
+            <li><a href="#">Free Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6>More</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Gita Govinda</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6>Contact</h6>
+          <p><i class="fa-solid fa-envelope" style="color: #000000;"></i> contact@natya.com</p>
+          <p><i class="fa-solid fa-phone-volume" style="color: #000000;"></i> +91 94464 06749</p>
+          <p><i class="fa-brands fa-whatsapp" style="color: #000000;"></i> +91 94464 06749</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-white text-center py-3 mt-3" style="background-color: rgb(246, 67, 111);">
+      <p>© Ayursutra Pvt. Ltd All Rights Reserved. Developed & Maintained by <strong>Invis Pvt. Ltd</strong></p>
+      <div>
+        <a href="#" class="text-white mx-2"><i class="fab fa-instagram" style="color: black;"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
 
   <script>
+
     document.addEventListener("DOMContentLoaded", function () {
       const track = document.querySelector(".carousel-track");
       const prevBtn = document.getElementById("prevBtn");
@@ -816,8 +966,6 @@
         }
       });
 
-      
-
       prevBtn.addEventListener("click", function () {
         if (index <= 0) {
           // If at the start, jump to the last set
@@ -833,7 +981,6 @@
         }
       });
     });
-
 
 
     const carouselTrack2 = document.getElementById("carouselTrack2");
