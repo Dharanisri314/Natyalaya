@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -307,7 +310,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-light bg-white px-4 border-bottom">
         <div class="container-fluid d-flex justify-content-between">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="https://www.natyasutraonline.com/images/v5/natyasutra-logo.svg" height="40" alt="natyasutra">
             </a>
             <div>
@@ -819,6 +822,33 @@ AdiKeshava is a composition whose origins date back centuries, but its authorshi
                 }
             });
         });
+
+        
+    const carouselTrack2 = document.getElementById("carouselTrack2");
+    const prevBtn2 = document.getElementById("prevBtn2");
+    const nextBtn2 = document.getElementById("nextBtn2");
+    let currentIndex2 = 0;
+
+    function updateCarousel2() {
+      const itemWidth = document.querySelector(".carousel-item-custom-2").offsetWidth + 20;
+      carouselTrack2.style.transform = `translateX(-${currentIndex2 * itemWidth}px)`;
+      prevBtn2.disabled = currentIndex2 === 0;
+      nextBtn2.disabled = currentIndex2 === carouselTrack2.children.length - 1;
+    }
+
+    nextBtn2.addEventListener("click", () => {
+      if (currentIndex2 < carouselTrack2.children.length - 1) {
+        currentIndex2++;
+        updateCarousel2();
+      }
+    });
+
+    prevBtn2.addEventListener("click", () => {
+      if (currentIndex2 > 0) {
+        currentIndex2--;
+        updateCarousel2();
+      }
+    });
 
 
     </script>

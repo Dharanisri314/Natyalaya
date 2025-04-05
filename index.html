@@ -9,6 +9,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="style.css" rel="stylesheet">
   <link href="details.js" rel="stylesheet">
   <link href="details.json" rel="stylesheet">
@@ -210,7 +213,6 @@
 
     .news-card {
       background-color: #c0b4af;
-      /* Light brownish-grey background */
       color: white;
       padding: 40px;
       border-radius: 15px;
@@ -237,13 +239,6 @@
       text-decoration: none;
     }
 
-
-
-
-
-
-
-
     .program-card {
       position: relative;
       text-align: center;
@@ -268,8 +263,6 @@
       padding: 5px 10px;
       border-radius: 5px;
     }
-
-
 
     .class-card {
       position: relative;
@@ -309,7 +302,7 @@
 <body>
   <nav class="navbar navbar-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
         aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -373,7 +366,7 @@
     <div class="row g-4">
       <!-- Large Left Section -->
       <div class="col-lg-6">
-        <a href="details1.html"> <!-- Add anchor tag around the card -->
+        <a href="details1.html"> 
           <div class="class-card" style="background-image: url('https://www.natyasutraonline.com/uploads/programme/home_page_img/pralaya-payodhi-jale-n.webp'); 
                                height: 300px; background-size: cover; background-position: center;">
             <div class="overlay">
@@ -913,11 +906,19 @@
             <li><a href="#">Sitemap</a></li>
           </ul>
         </div>
-        <div class="col-md-2">
-          <h6>Contact</h6>
-          <p><i class="fa-solid fa-envelope" style="color: #000000;"></i> contact@natya.com</p>
-          <p><i class="fa-solid fa-phone-volume" style="color: #000000;"></i> +91 94464 06749</p>
-          <p><i class="fa-brands fa-whatsapp" style="color: #000000;"></i> +91 94464 06749</p>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold">Contact</h6>
+          <p class="d-flex align-items-center">
+            <i class="fa-solid fa-envelope me-2"></i> contact@natya.com
+          </p>
+          
+          <p class="d-flex align-items-center">
+            <i class="fa-solid fa-phone-volume me-2"></i> <span style="font-size: 14px;">+91 94464 06749</span>
+          </p>
+          
+          <p class="d-flex align-items-center">
+            <i class="fa-brands fa-whatsapp me-2"></i> <span style="font-size: 14px;">+91 94464 06749</span>
+          </p>
         </div>
       </div>
     </div>
@@ -925,7 +926,7 @@
     <div class="text-white text-center py-3 mt-3" style="background-color: rgb(246, 67, 111);">
       <p>© Ayursutra Pvt. Ltd All Rights Reserved. Developed & Maintained by <strong>Invis Pvt. Ltd</strong></p>
       <div>
-        <a href="#" class="text-white mx-2"><i class="fab fa-instagram" style="color: black;"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
         <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
         <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
         <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
